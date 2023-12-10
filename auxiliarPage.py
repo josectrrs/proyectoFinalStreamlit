@@ -25,7 +25,9 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
 
                     # Mostrar los datos en una tabla
                     st.write("Detalles del RFC:")
-                    st.write(pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal], "Código Postal": [codigo_postal]}))
+                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
+                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
+                    st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
                 elif "no registrado en el padrón de contribuyentes" in status_text:
                     st.error(f"RFC {rfc_to_search} no registrado en el padrón de contribuyentes. Detalles:\n{line}")
                 else:
@@ -35,6 +37,16 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
             st.warning(f"RFC {rfc_to_search} no encontrado en el archivo de texto.")
     else:
         st.error("Error al obtener el RFC desde el archivo Excel.")
+
+# Función para aplicar colores a las celdas en función de la respuesta del SAT
+def color_cell(value):
+    if "RFC válido" in value:
+        return 'background-color: #8eff8e; color: black'  # Verde
+    elif "no registrado en el padrón de contribuyentes" in value:
+        return 'background-color: #ff8e8e; color: black'  # Rojo
+    else:
+        return ''  # Sin color
+
 
 
 def auxiliarPage(username):
