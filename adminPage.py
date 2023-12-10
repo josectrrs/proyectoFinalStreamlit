@@ -43,6 +43,15 @@ def adminPage(username):
         st.write("Contenido del archivo de texto:")
         st.write(txt_content)
 
+    # Mostrar archivos en la carpeta "archivos"
+    st.write("Archivos en la carpeta 'archivos':")
+    archivos_en_carpeta = [file for file in os.listdir("archivos") if file.endswith((".xls", ".xlsx", ".txt"))]
+
+    if not archivos_en_carpeta:
+        st.warning("No se encontraron archivos en la carpeta 'archivos'.")
+    else:
+        st.write(archivos_en_carpeta)
+
     # Botón para cerrar sesión
     if st.button("Cerrar Sesión"):
         st.session_state.username = None  # Asignar un valor nulo al nombre de usuario
