@@ -18,6 +18,14 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
                 status_text = parts[2].strip()
                 if "RFC válido" in status_text:
                     st.success(f"RFC {rfc_to_search} es válido ante el SAT. Detalles:\n{line}")
+
+                    # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
+                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
+                    codigo_postal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0]
+
+                    # Mostrar los datos en una tabla
+                    st.write("Detalles del RFC:")
+                    st.write(pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal], "Código Postal": [codigo_postal]}))
                 elif "no registrado en el padrón de contribuyentes" in status_text:
                     st.error(f"RFC {rfc_to_search} no registrado en el padrón de contribuyentes. Detalles:\n{line}")
                 else:
