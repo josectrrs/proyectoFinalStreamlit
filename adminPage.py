@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import os
 
+
 def adminPage(username):
     st.title(f"Panel de Administrador - Bienvenido, {username}")
     st.write("Acciones específicas para administradores")
@@ -42,6 +43,15 @@ def adminPage(username):
         # Mostrar el contenido del archivo de texto en una tabla
         st.write("Contenido del archivo de texto:")
         st.write(txt_content)
+
+    # Botón para vaciar archivos .xlsx, .xls y .txt
+    if st.button("Vaciar Archivos"):
+        archivos_a_eliminar = [file for file in os.listdir("archivos") if file.endswith((".xls", ".xlsx", ".txt"))]
+        for archivo in archivos_a_eliminar:
+            archivo_path = os.path.join("archivos", archivo)
+            os.remove(archivo_path)
+
+        st.success("Archivos .xlsx, .xls y .txt eliminados con éxito!")
 
     # Mostrar archivos en la carpeta "archivos"
     st.write("Archivos en la carpeta 'archivos':")
