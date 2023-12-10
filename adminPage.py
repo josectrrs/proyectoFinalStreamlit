@@ -27,8 +27,8 @@ def adminPage(username):
                 st.write(txt_file)
 
         # Subir archivo Excel solo si no hay archivos .xlsx
-        if not excel_files:
-            excel_file = st.file_uploader("Subir archivo Excel", type=["xls", "xlsx"])
+        if not excel_files or st.button("Subir archivo Excel"):
+            excel_file = st.file_uploader("Seleccionar archivo Excel", type=["xls", "xlsx"])
             if excel_file is not None:
                 excel_filename = excel_file.name
                 save_path = os.path.join("archivos", excel_filename)
@@ -40,8 +40,8 @@ def adminPage(username):
                 st.write(excel_df)
 
         # Subir archivo de texto solo si no hay archivos .txt
-        if not txt_files:
-            txt_file = st.file_uploader("Subir archivo de texto", type=["txt"])
+        if not txt_files or st.button("Subir archivo de texto"):
+            txt_file = st.file_uploader("Seleccionar archivo de texto", type=["txt"])
             if txt_file is not None:
                 txt_filename = txt_file.name
                 save_path = os.path.join("archivos", txt_filename)
