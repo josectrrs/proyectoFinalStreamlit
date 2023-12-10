@@ -58,7 +58,7 @@ def auxiliarPage(username):
         if st.button("Buscar RFC en Archivo de Texto"):
             # Buscar el RFC correspondiente en el archivo de texto
             txt_file_path = os.path.join("archivos", "RESPUESTA_SAT_RFC.txt")
-            with open(txt_file_path, "r") as txt_file:
+            with open(txt_file_path, "r", encoding='latin-1') as txt_file:
                 txt_content = txt_file.read()
 
             buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content)
