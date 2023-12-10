@@ -1,0 +1,236 @@
+1|CUOA7211184XA|RFC válido, y susceptible de recibir facturas
+2|HEHA750615M31|RFC válido, y susceptible de recibir facturas
+3|GOVA700117EW7|RFC válido, y susceptible de recibir facturas
+4|CUCE830831CK6|RFC válido, y susceptible de recibir facturas
+5|HESA801006HJ1|RFC válido, y susceptible de recibir facturas
+6|SORL870710EJ2|RFC válido, y susceptible de recibir facturas
+7|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+8|LOOG8109285Z5|RFC válido, y susceptible de recibir facturas
+9|MAHM8908204E1|RFC válido, y susceptible de recibir facturas
+10|MABA610904CT3|RFC válido, y susceptible de recibir facturas
+11|TOCA791129EX6|RFC válido, y susceptible de recibir facturas
+12|JIZC871201RD3|RFC válido, y susceptible de recibir facturas
+13|OEHA7404206Z2|RFC válido, y susceptible de recibir facturas
+14|SAGA751112B35|RFC válido, y susceptible de recibir facturas
+15|NUEA740409FP0|RFC válido, y susceptible de recibir facturas
+16|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+17|SANA741218GS4|RFC válido, y susceptible de recibir facturas
+18|AEOD880409R4A|RFC válido, y susceptible de recibir facturas
+19|SODI7803083T8|RFC válido, y susceptible de recibir facturas
+20|HEBD820927CL4|RFC válido, y susceptible de recibir facturas
+21|BUCM8602269A9|RFC válido, y susceptible de recibir facturas
+22|LASS821230G56|RFC válido, y susceptible de recibir facturas
+23|BAOR860315H7A|RFC válido, y susceptible de recibir facturas
+24|FEAB881229JS3|RFC válido, y susceptible de recibir facturas
+25|RAZJ801224JE4|RFC válido, y susceptible de recibir facturas
+26|PAJF8909265H2|RFC válido, y susceptible de recibir facturas
+27|PORC851002ID3|RFC válido, y susceptible de recibir facturas
+28|GACA8502286V6|RFC válido, y susceptible de recibir facturas
+29|GAHC7203145H1|RFC válido, y susceptible de recibir facturas
+30|LILC880723M48|RFC válido, y susceptible de recibir facturas
+31|COCC800712L98|RFC válido, y susceptible de recibir facturas
+32|MADC661104IM4|RFC válido, y susceptible de recibir facturas
+33|FEVG950405FP7|RFC válido, y susceptible de recibir facturas
+34|HECR8310184Z9|RFC válido, y susceptible de recibir facturas
+35|CATJ860918II3|RFC válido, y susceptible de recibir facturas
+36|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+37|LOCR8510229R5|RFC válido, y susceptible de recibir facturas
+38|VISS850601FT9|RFC válido, y susceptible de recibir facturas
+39|BEML861227VB9|RFC válido, y susceptible de recibir facturas
+40|RIAX910126RP3|RFC válido, y susceptible de recibir facturas
+41|GUOC860326IZ0|RFC no registrado en el padrón de contribuyentes
+42|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+43|MAGC8102266R0|RFC válido, y susceptible de recibir facturas
+44|FIGE910816TJ2|RFC válido, y susceptible de recibir facturas
+45|BUMM830504AY2|RFC válido, y susceptible de recibir facturas
+46|BARE970522MF9|RFC válido, y susceptible de recibir facturas
+47|MOTA8608152V8|RFC válido, y susceptible de recibir facturas
+48|CUQD820907M40|RFC válido, y susceptible de recibir facturas
+49|CACJ840423DJ0|RFC válido, y susceptible de recibir facturas
+50|FEHD760326AZ1|RFC válido, y susceptible de recibir facturas
+51|BODG810920DKA|RFC válido, y susceptible de recibir facturas
+52|MULD7704085E6|RFC válido, y susceptible de recibir facturas
+53|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+54|BAMM771121CW6|RFC válido, y susceptible de recibir facturas
+55|MAMD820819MR1|RFC válido, y susceptible de recibir facturas
+56|CAOE740610AH0|RFC válido, y susceptible de recibir facturas
+57|XAXA010101000|RFC no registrado en el padrón de contribuyentes
+58|ROGF8408223U1|RFC válido, y susceptible de recibir facturas
+59|ROBM870711HJ3|RFC válido, y susceptible de recibir facturas
+60|GOGA771206AK7|RFC válido, y susceptible de recibir facturas
+61|GOBL890614MD1|RFC válido, y susceptible de recibir facturas
+62|VIRE800525564|RFC válido, y susceptible de recibir facturas
+63|AAZE840927DK6|RFC válido, y susceptible de recibir facturas
+64|PEGE760206GF9|RFC válido, y susceptible de recibir facturas
+65|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+66|VECE761019SU2|RFC válido, y susceptible de recibir facturas
+67|LOVE860830DB0|RFC válido, y susceptible de recibir facturas
+68|AOAJ830406MB6|RFC válido, y susceptible de recibir facturas
+69|CUHF760112U79|RFC válido, y susceptible de recibir facturas
+70|LABJ820906JG9|RFC válido, y susceptible de recibir facturas
+71|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+72|EALA8203256F8|RFC válido, y susceptible de recibir facturas
+73|FEVG950405FP7|RFC válido, y susceptible de recibir facturas
+74|ROGL850611E99|RFC válido, y susceptible de recibir facturas
+75|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+76|MACF741225EE0|RFC válido, y susceptible de recibir facturas
+77|FUCM6804226F6|RFC válido, y susceptible de recibir facturas
+78|BALG820125R14|RFC no registrado en el padrón de contribuyentes
+79|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+80|MAZA891224JD3|RFC válido, y susceptible de recibir facturas
+81|CUFC8905062V8|RFC válido, y susceptible de recibir facturas
+82|LAMD790918JAA|RFC válido, y susceptible de recibir facturas
+83|SAVG801105113|RFC válido, y susceptible de recibir facturas
+84|GGV160504M12|RFC válido, y susceptible de recibir facturas
+85|VALF8011085PA|RFC válido, y susceptible de recibir facturas
+86|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+87|MALM960307EP7|RFC válido, y susceptible de recibir facturas
+88|HEMM780131742|RFC válido, y susceptible de recibir facturas
+89|CAMJ8007149BA|RFC válido, y susceptible de recibir facturas
+90|RACG830518Q10|RFC no registrado en el padrón de contribuyentes
+91|RECG670528NU7|RFC válido, y susceptible de recibir facturas
+92|SAMC731117NW6|RFC válido, y susceptible de recibir facturas
+93|SAAG670426GD3|RFC válido, y susceptible de recibir facturas
+94|GSU1310136W9|RFC válido, y susceptible de recibir facturas
+95|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+96|YEFL940131AE5|RFC válido, y susceptible de recibir facturas
+97|OIGH7808118X3|RFC válido, y susceptible de recibir facturas
+98|MEAM820309UV6|RFC válido, y susceptible de recibir facturas
+99|DIMS800519UX0|RFC válido, y susceptible de recibir facturas
+100|RUMI8410281D2|RFC válido, y susceptible de recibir facturas
+101|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+102|CAVR880326497|RFC válido, y susceptible de recibir facturas
+103|ROGC960527E6A|RFC válido, y susceptible de recibir facturas
+104|VIMI740731V01|RFC no registrado en el padrón de contribuyentes
+105|CUMY730124TB2|RFC válido, y susceptible de recibir facturas
+106|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+107|AUNR791112224|RFC válido, y susceptible de recibir facturas
+108|AALJ860826EC7|RFC válido, y susceptible de recibir facturas
+109|GOEJ730912UR0|RFC válido, y susceptible de recibir facturas
+110|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+111|AOCJ710119LZ7|RFC válido, y susceptible de recibir facturas
+112|GAMJ730807G16|RFC válido, y susceptible de recibir facturas
+113|NARA871113HD5|RFC válido, y susceptible de recibir facturas
+114|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+115|PEPM801215U78|RFC válido, y susceptible de recibir facturas
+116|RAMI860720P85|RFC válido, y susceptible de recibir facturas
+117|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+118|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+119|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+120|JIMK760218TM0|RFC válido, y susceptible de recibir facturas
+121|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+122|GUGC850426T67|RFC válido, y susceptible de recibir facturas
+123|GOCF8101275J1|RFC válido, y susceptible de recibir facturas
+124|AEAA900706LN6|RFC válido, y susceptible de recibir facturas
+125|DOHK900610PP3|RFC válido, y susceptible de recibir facturas
+126|MEAX921105AV5|RFC válido, y susceptible de recibir facturas
+127|LAPL8708064K3|RFC válido, y susceptible de recibir facturas
+128|GOMM950115MQ1|RFC válido, y susceptible de recibir facturas
+129|OAGC7309136U0|RFC válido, y susceptible de recibir facturas
+130|REAJ860318GCA|RFC válido, y susceptible de recibir facturas
+131|BUCM881119395|RFC válido, y susceptible de recibir facturas
+132|ROGF940818221|RFC válido, y susceptible de recibir facturas
+133|CUGI850531PN8|RFC válido, y susceptible de recibir facturas
+134|DIBE900222C77|RFC válido, y susceptible de recibir facturas
+135|MALL841106U24|RFC válido, y susceptible de recibir facturas
+136|VAFM570519BA9|RFC válido, y susceptible de recibir facturas
+137|SEVM881206KQ9|RFC válido, y susceptible de recibir facturas
+138|MALL841106U24|RFC válido, y susceptible de recibir facturas
+139|SAVL7808189C9|RFC válido, y susceptible de recibir facturas
+140|MALL841106U24|RFC válido, y susceptible de recibir facturas
+141|LUGA8012206U9|RFC válido, y susceptible de recibir facturas
+142|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+143|SATM8604132Q8|RFC válido, y susceptible de recibir facturas
+144|CUOA7211184XA|RFC válido, y susceptible de recibir facturas
+145|GOCL841216UN3|RFC válido, y susceptible de recibir facturas
+146|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+147|XAXA010101000|RFC no registrado en el padrón de contribuyentes
+148|MAVC810617UIA|RFC válido, y susceptible de recibir facturas
+149|MAEG6212127G5|RFC válido, y susceptible de recibir facturas
+150|RANA800613KA3|RFC válido, y susceptible de recibir facturas
+151|IOMJ9207034JA|RFC válido, y susceptible de recibir facturas
+152|BALM900412MJA|RFC válido, y susceptible de recibir facturas
+153|BALJ620422TV7|RFC válido, y susceptible de recibir facturas
+154|CACM790802162|RFC válido, y susceptible de recibir facturas
+155|SABV8605232T1|RFC válido, y susceptible de recibir facturas
+156|CALF870425BS5|RFC válido, y susceptible de recibir facturas
+157|AUGL900509MJ5|RFC válido, y susceptible de recibir facturas
+158|SAMS8102207K7|RFC válido, y susceptible de recibir facturas
+159|MARU730225K16|RFC válido, y susceptible de recibir facturas
+160|POOM851108J9A|RFC válido, y susceptible de recibir facturas
+161|HEGH860324MV5|RFC válido, y susceptible de recibir facturas
+162|SODE820530E41|RFC válido, y susceptible de recibir facturas
+163|AAMM7201084G7|RFC válido, y susceptible de recibir facturas
+164|BALJ620422TV7|RFC válido, y susceptible de recibir facturas
+165|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+166|DILM751106B38|RFC válido, y susceptible de recibir facturas
+167|SOJM960101NP9|RFC válido, y susceptible de recibir facturas
+168|EOCA840404949|RFC válido, y susceptible de recibir facturas
+169|EUVM8310185C4|RFC válido, y susceptible de recibir facturas
+170|GOLM780428LN4|RFC válido, y susceptible de recibir facturas
+171|HEGG820616KQ9|RFC válido, y susceptible de recibir facturas
+172|GUVF9512142D1|RFC válido, y susceptible de recibir facturas
+173|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+174|MOSI8407053T0|RFC válido, y susceptible de recibir facturas
+175|MOVI851119L57|RFC válido, y susceptible de recibir facturas
+176|RERR770418H45|RFC válido, y susceptible de recibir facturas
+177|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+178|VIEM880304F43|RFC válido, y susceptible de recibir facturas
+179|CALR751008UB1|RFC válido, y susceptible de recibir facturas
+180|DUGM8201083D2|RFC válido, y susceptible de recibir facturas
+181|SAJN980925Q24|RFC válido, y susceptible de recibir facturas
+182|AICN8309073C5|RFC válido, y susceptible de recibir facturas
+183|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+184|NUEC760405AR2|RFC válido, y susceptible de recibir facturas
+185|RORO790216SB0|RFC válido, y susceptible de recibir facturas
+186|CALO8412063I8|RFC válido, y susceptible de recibir facturas
+187|OARY870918S42|RFC válido, y susceptible de recibir facturas
+188|PAMJ590306651|RFC válido, y susceptible de recibir facturas
+189|ROAA841020R77|RFC válido, y susceptible de recibir facturas
+190|FIAE900602PK9|RFC válido, y susceptible de recibir facturas
+191|PAVP7508218W6|RFC válido, y susceptible de recibir facturas
+192|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+193|QURL8408087F9|RFC válido, y susceptible de recibir facturas
+194|RIRC781212S35|RFC válido, y susceptible de recibir facturas
+195|VIJR740131VC3|RFC válido, y susceptible de recibir facturas
+196|BIAR7407165K9|RFC válido, y susceptible de recibir facturas
+197|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+198|GOAR750207K34|RFC válido, y susceptible de recibir facturas
+199|RERM780901IX8|RFC válido, y susceptible de recibir facturas
+200|CAVR821029945|RFC válido, y susceptible de recibir facturas
+201|XAXA010101000|RFC no registrado en el padrón de contribuyentes
+202|AUIE7904286Y4|RFC válido, y susceptible de recibir facturas
+203|ROGY850830UW5|RFC válido, y susceptible de recibir facturas
+204|YUCR8212032C9|RFC válido, y susceptible de recibir facturas
+205|EIMA9204306B8|RFC válido, y susceptible de recibir facturas
+206|COEB891005N83|RFC válido, y susceptible de recibir facturas
+207|DUGM910511PQ2|RFC válido, y susceptible de recibir facturas
+208|DUGM910511PQ2|RFC válido, y susceptible de recibir facturas
+209|GUDS820119PV8|RFC válido, y susceptible de recibir facturas
+210|GUDS820119PV8|RFC válido, y susceptible de recibir facturas
+211|VIRS890808B68|RFC válido, y susceptible de recibir facturas
+212|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+213|FORS790520LU4|RFC válido, y susceptible de recibir facturas
+214|SMM1112106J1|RFC no registrado en el padrón de contribuyentes
+215|PAGS770412FAA|RFC válido, y susceptible de recibir facturas
+216|TERG6106255Q9|RFC válido, y susceptible de recibir facturas
+217|CAZM791206UE8|RFC válido, y susceptible de recibir facturas
+218|JGBL7303243C7|RFC no registrado en el padrón de contribuyentes
+219|BALM900412MJA|RFC válido, y susceptible de recibir facturas
+220|RECU781124S13|RFC válido, y susceptible de recibir facturas
+221|UITA890830HT8|RFC válido, y susceptible de recibir facturas
+222|TOLU830504AM5|RFC válido, y susceptible de recibir facturas
+223|GAAL9102081F0|RFC válido, y susceptible de recibir facturas
+224|CUGI8407314L8|RFC válido, y susceptible de recibir facturas
+225|VAHF771226Q15|RFC válido, y susceptible de recibir facturas
+226|MEHE870618I84|RFC válido, y susceptible de recibir facturas
+227|MAMV8612236J3|RFC válido, y susceptible de recibir facturas
+228|DUFV780317JG5|RFC válido, y susceptible de recibir facturas
+229|VIMI790701CM5|RFC válido, y susceptible de recibir facturas
+230|VIRG840617313|RFC válido, y susceptible de recibir facturas
+231|VERV8404201N9|RFC válido, y susceptible de recibir facturas
+232|RELV8002204D6|RFC válido, y susceptible de recibir facturas
+233|XAXX010101000|RFC no registrado en el padrón de contribuyentes
+234|PAUX730901FU6|RFC válido, y susceptible de recibir facturas
+235|GOLY7804085E5|RFC válido, y susceptible de recibir facturas
+236|LAMI8504112W2|RFC válido, y susceptible de recibir facturas
