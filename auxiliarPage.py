@@ -30,6 +30,16 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
                     st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
                 elif "no registrado en el padrón de contribuyentes" in status_text:
                     st.error(f"RFC {rfc_to_search} no registrado en el padrón de contribuyentes. Detalles:\n{line}")
+
+                    # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
+                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
+                    codigo_postal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0]
+
+                    # Mostrar los datos en una tabla con color rojo
+                    st.write("Detalles del RFC (No Válido):")
+                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
+                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
+                    st.dataframe(df_details.style.applymap(color_cell_red, subset=["Respuesta del SAT"]))
                 else:
                     st.warning(f"RFC {rfc_to_search} tiene un estado desconocido. Detalles:\n{line}")
                 break
@@ -38,11 +48,16 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
     else:
         st.error("Error al obtener el RFC desde el archivo Excel.")
 
-# Función para aplicar colores a las celdas en función de la respuesta del SAT
+# Función para aplicar colores a las celdas en función de la respuesta del SAT (color verde)
 def color_cell(value):
     if "RFC válido" in value:
         return 'background-color: #8eff8e; color: black'  # Verde
-    elif "no registrado en el padrón de contribuyentes" in value:
+    else:
+        return ''  # Sin color
+
+# Función para aplicar colores a las celdas en función de la respuesta del SAT (color rojo)
+def color_cell_red(value):
+    if "no registrado en el padrón de contribuyentes" in value:
         return 'background-color: #ff8e8e; color: black'  # Rojo
     else:
         return ''  # Sin color
