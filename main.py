@@ -47,8 +47,3 @@ else:
         adminPage(st.session_state.username)
     elif st.session_state.username == "auxiliar":
         auxiliarPage(st.session_state.username)
-
-# Mostrar el botón "Ir a Preguntas Frecuentes" en todo momento
-if st.button("Ir a Preguntas Frecuentes"):
-    login_container.empty()  # Eliminar el panel de inicio de sesión
-    FAQPage()
