@@ -27,7 +27,9 @@ elif selected2 == "Paso 2":
             :pencil: **Limpieza de los datos** 
             
             La limpieza de datos se llevó a cabo después de obtener un archivo en formato .xlsx de clientes del sistema de Factura Electrónica de CONTPAQi.
-            
+            """)
+        st.image("imgs/0_PF.png", caption="Archivo en formato .xlsx", use_column_width=True)
+        st.write("""
             A continuación, se detallan los pasos de limpieza que se realizaron:
             
             :green[**Carga de Datos:**]
