@@ -57,16 +57,43 @@ elif selected2 == "Paso 2":
         st.write("""
             :green[**Eliminación de Caracteres Especiales:**]
             Eliminamos caracteres no deseados tales como los tabuladores de las filas del DataFrame.
-            
+            """)
+        st.image("imgs/6_PF.png", caption="Eliminación de Caracteres Especiales", use_column_width=True)
+        st.write("""
             :green[**Exportación a Formato Texto (.txt):**]
             Guardamos el DataFrame resultante en un archivo de texto llamado "datos3.txt".
-            
-            :green[**Lectura:**]
-            Leímos una vez más el archivo de texto para revisar su contenido.
+            """)
+        st.image("imgs/7_PF.png", caption="Exportación a Formato Texto (.txt)", use_column_width=True)
+        st.write("""
+            :green[**Lectura y Ajuste Adicional:**]
+            Abrímos y leímos una vez más el archivo de texto y guardamos las líneas en la lista "lineas".
             
         """)
+        st.image("imgs/9_PF.png", caption="Lectura", use_column_width=True)
+        st.write("""
+                    Eliminamos la primera línea de la lista "lineas".
+                    
+                    Creamos una lista vacía llamada Lineas2.
+                    
+                    Luego Iteramos sobre cada línea en la lista "lineas".
+                    
+                    Eliminamos los caracteres de tabulación de cada línea.
+                    
+                    Agregamos la línea sin caracteres de tabulación a la lista Lineas2.
 
+                    Por último, mostramos la lista Lineas2 después de eliminar los caracteres de tabulación.
+                
+        """)
+        st.image("imgs/10_PF.png", caption="Lectura", use_column_width=True)
 
+        st.write("""
+                    Abrimos el archivo "datos3.txt" en modo escritura utilizando la declaración with.
+                            
+                    Iteramos sobre cada línea en la lista "Lineas2".
+                            
+                    Escribimos cada línea en el archivo "datos3.txt" sin caracteres de tabulación.
+        """)
+        st.image("imgs/11_PF.png", caption="Lectura", use_column_width=True)
 
 # Expander para Paso 3
 elif selected2 == "Paso 3":
