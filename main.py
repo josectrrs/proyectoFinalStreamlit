@@ -56,13 +56,15 @@ if selected == "Login":
         elif st.session_state.username == "auxiliar":
             auxiliarPage(st.session_state.username)
 elif selected == "Integrantes":
-
+    st.header("Integrantes del proyecto Final:")
     st.write("""
         **WILBERT ERNESTO AKE BERZUNZA** 
     """)
+    st.image("imgs/ernesto.png", caption="WILBERT ERNESTO AKE BERZUNZA", use_column_width=True)
     st.write("""
         **JOSÉ CARLOS PIÑA TORRES** 
     """)
+    st.image("imgs/jose.png", caption="JOSÉ CARLOS PIÑA TORRES", use_column_width=True)
 
 elif selected == "FAQ":
     st.title("Proyecto Final - Comprobación de la validez de RFC")
