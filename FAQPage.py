@@ -138,6 +138,9 @@ elif selected2 == "Paso 4":
             
         """)
 
+if st.button("Ir a la App"):
+    # Redirige a la página "main.py"
+    st.markdown('[Ir a la App](main.py)')
 #selected2
 
 
