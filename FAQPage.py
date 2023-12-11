@@ -9,10 +9,10 @@ selected2 = option_menu(None, ["Paso 1", "Paso 2", "Paso 3", 'Paso 4'],
 
 # Expander para Paso 1
 if selected2 == "Paso 1":
-    with st.expander("Ver explicación del Paso 1"):
+    with st.expander("Adquisición de datos"):
         st.write("""
-            Aquí va la explicación detallada del Paso 1.
-            Puedes agregar texto, imágenes o cualquier otro contenidos.
+            :pencil: **Título 1** Aquí va la explicación detallada del Paso 1.
+            :green[Puedes agregar texto, imágenes o cualquier otro contenidos:]
         """)
 # Expander para Paso 2
 elif selected2 == "Paso 2":
