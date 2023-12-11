@@ -47,5 +47,7 @@ else:
         adminPage(st.session_state.username)
     elif st.session_state.username == "auxiliar":
         auxiliarPage(st.session_state.username)
-    elif st.button("Ir a Preguntas Frecuentes"):
-        FAQPage()
+    else:
+        # Agrega el botón "Ir a Preguntas Frecuentes" después de iniciar sesión
+        if st.button("Ir a Preguntas Frecuentes"):
+            FAQPage()
