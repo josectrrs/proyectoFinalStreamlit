@@ -94,6 +94,10 @@ elif selected2 == "Paso 2":
                     **3)** Escribimos cada línea en el archivo "datos3.txt" sin caracteres de tabulación.
         """)
         st.image("imgs/11_PF.png", caption="Lectura", use_column_width=True)
+        st.write("""
+                    :green[**Resultado obtenido:**]
+                """)
+        st.image("imgs/12_PF.png", caption="Resultado obtenido", use_column_width=True)
 
 # Expander para Paso 3
 elif selected2 == "Paso 3":
