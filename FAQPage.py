@@ -13,7 +13,7 @@ if selected2 == "Paso 1":
     with st.expander("Ver explicación del Paso 1"):
         st.write("""
             Aquí va la explicación detallada del Paso 1.
-            Puedes agregar texto, imágenes o cualquier otro contenido.
+            Puedes agregar texto, imágenes o cualquier otro contenidos.
         """)
 # Expander para Paso 2
 elif selected2 == "Paso 2":
