@@ -58,6 +58,14 @@ if selected == "Login":
 elif selected == "FAQ":
     st.title("Preguntas Frecuentes (FAQ) - Proyecto Final")
 
+    st.markdown("""
+        <span style="font-size:18px">
+            :pencil: **Limpieza de los datos** 
+
+            La limpieza de datos se llevó a cabo después de obtener un archivo en formato .xlsx de clientes del sistema de Factura Electrónica de CONTPAQi.
+        </span>
+    """, unsafe_allow_html=True)
+
     st.write("""
         :pencil: **Adquisición de datos** 
 
