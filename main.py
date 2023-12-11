@@ -60,7 +60,7 @@ elif selected == "Integrantes":
     st.write("""
         **WILBERT ERNESTO AKE BERZUNZA** 
     """)
-    st.image("imgs/ernesto.png", caption="WILBERT ERNESTO AKE BERZUNZA", use_column_width=True)
+    st.image("imgs/ernesto.jpg", caption="WILBERT ERNESTO AKE BERZUNZA", use_column_width=True)
     st.write("""
         **JOSÉ CARLOS PIÑA TORRES** 
     """)
