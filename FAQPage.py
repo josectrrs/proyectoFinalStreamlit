@@ -47,7 +47,9 @@ elif selected2 == "Paso 2":
         st.write("""
             :green[**Formato Específico:**]
             Se agregó el símbolo | al principio de cada valor en el DataFrame, utilizando applymap y una función lambda.
-            
+            """)
+        st.image("imgs/4_PF.png", caption="Formato Específico", use_column_width=True)
+        st.write("""
             :green[**Enumeración:**]
             Añadimos una columna adicional para enumerar las filas.
 
