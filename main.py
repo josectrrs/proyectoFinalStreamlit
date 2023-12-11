@@ -52,4 +52,4 @@ else:
 if st.button("Preguntas Frecuentes"):
     login_container.empty()  # Eliminar el panel de inicio de sesión
     FAQPage()
-    #st.rerun()  # Recargar la aplicación para mostrar la página correspondiente
+    st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
