@@ -43,7 +43,7 @@ login_container = st.empty()
 if st.button("Ir a Preguntas Frecuentes"):
     login_container.empty()  # Eliminar el panel de inicio de sesión
     FAQPage()
-    st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
+    st.rerun()  # Recargar la aplicación para mostrar la página correspondiente
 
 # Determinar la página a mostrar
 if st.session_state.username is None:
