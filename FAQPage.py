@@ -55,6 +55,9 @@ elif selected2 == "Paso 2":
             Leímos una vez más el archivo de texto para revisar su contenido.
             
         """)
+
+        st.image("https://drive.google.com/file/d/1_y9d2_ckx2c6zw15TOe1s3iPgtyRA9Mk/view?usp=sharing", caption="Carga de Datos", use_column_width=True)
+
 # Expander para Paso 3
 elif selected2 == "Paso 3":
     with st.expander("Ver explicación del Paso 3"):
