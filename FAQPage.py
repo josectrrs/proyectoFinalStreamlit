@@ -12,6 +12,7 @@ if selected2 == "Paso 1":
     with st.expander("Ver explicación del Paso 1"):
         st.write("""
             :pencil: **Adquisición de datos** 
+            
             :green[**¿Qué datos se están trabajando?:**]
             Estamos trabajando con datos de clientes del sistema de "Factura Electrónica de CONTPAQi". Estos datos incluyen información relacionada con los clientes que utilizan el sistema, como sus nombres, Registro Federal de Contribuyentes (RFC), razón social, Régimen Fiscal, Código Postal y otros detalles relevantes.
         """)
