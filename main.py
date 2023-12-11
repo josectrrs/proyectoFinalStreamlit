@@ -169,6 +169,8 @@ elif selected == "FAQ":
 
     st.image("imgs/imgValidacion.png", caption="Página de validación masiva de RFC", use_column_width=True)
 
+    st.image("imgs/exitoValidacion.png", caption="Validación exitosa", use_column_width=True)
+
     st.image("imgs/respuestaSAT.png", caption="Validación de los RFC obtenida del SAT", use_column_width=True)
 
     #################################################
