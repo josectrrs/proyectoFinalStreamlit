@@ -21,7 +21,7 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
 
                     # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
                     regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
-                    codigo_postal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0]
+                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
 
                     # Mostrar los datos en una tabla
                     st.write("Detalles del RFC:")
@@ -33,7 +33,7 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
 
                     # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
                     regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
-                    codigo_postal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0]
+                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
 
                     # Mostrar los datos en una tabla con color rojo
                     st.write("Detalles del RFC (No Válido):")
