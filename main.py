@@ -41,8 +41,8 @@ login_container = st.empty()
 
 # Mostrar el botón "Ir a Preguntas Frecuentes" en todo momento
 if st.button("Ir a Preguntas Frecuentes"):
-    FAQPage()
     login_container.empty()  # Eliminar el panel de inicio de sesión
+    FAQPage()
     st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
 
 # Determinar la página a mostrar
