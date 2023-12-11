@@ -33,7 +33,7 @@ elif selected2 == "Paso 2":
             :green[**Carga de Datos:**]
             Se utilizó la biblioteca Pandas para cargar los datos desde el archivo .xlsx a un DataFrame llamado datoClientes.
             """)
-        st.image("imgs/1_PF.png", caption="Carga de Datos", use_column_width=True)
+        st.image("imgs/1_1PF.png", caption="Carga de Datos", use_column_width=True)
         st.write("""
             :green[**Selección de Columnas Relevantes:**]
             Se eliminaron las columnas innecesarias ("Razón Social", "Régimen Fiscal", "Código Postal") y se conservó solo la columna del RFC. 
