@@ -42,7 +42,9 @@ elif selected2 == "Paso 2":
         st.write("""
             :green[**Modificación de Nombres de Columnas:**]
             Se estableció el nombre de la columna que quedaba como 'None' porque en el contexto del análisis posterior este dato no era útil.
-            
+            """)
+        st.image("imgs/3_PF.png", caption="Modificación de Nombres de Columnas", use_column_width=True)
+        st.write("""
             :green[**Formato Específico:**]
             Se agregó el símbolo | al principio de cada valor en el DataFrame, utilizando applymap y una función lambda.
             
