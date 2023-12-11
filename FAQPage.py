@@ -132,16 +132,12 @@ elif selected2 == "Paso 4":
             
             La visualización de datos es esencial para comunicar de manera efectiva los resultados del análisis y proporcionar una comprensión intuitiva de los patrones identificados. En este proyecto, se realizaron las siguientes acciones:
             
-            :green[**Qué datos están trabajando:**]
-            Estamos trabajando con datos de clientes del sistema d
+            :green[**Formulario para el filtrado de RFC y visualización de resultados:**]
+            Se creó un formulario básico para realizar el filtrado de razones sociales y conocer la respuesta obtenida por parte del SAT.
 
             
         """)
 
-if st.button("Ir a la App"):
-    # Redirige a la página "main.py"
-    st.markdown('[Ir a la App](main.py)')
-#selected2
 
 
 
