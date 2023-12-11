@@ -1,4 +1,3 @@
 import streamlit as st
 
-def FAQPage():
-    st.title("Preguntas Frecuentes (FAQ)")
+st.title("Preguntas Frecuentes (FAQ) - Proyecto Final")
