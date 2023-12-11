@@ -46,8 +46,9 @@ if st.button("Ir a Preguntas Frecuentes"):
 
 
 # Determinar la página a mostrar
-if st.session_state.username is None:
+if st.session_state.username is None and not st.session_state.login_completed:
     login()
+    st.session_state.login_completed = True
 else:
     if st.session_state.username == "admin":
         adminPage(st.session_state.username)
