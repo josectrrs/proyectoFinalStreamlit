@@ -51,8 +51,10 @@ elif selected2 == "Paso 2":
         st.image("imgs/4_PF.png", caption="Formato Específico", use_column_width=True)
         st.write("""
             :green[**Enumeración:**]
-            Añadimos una columna adicional para enumerar las filas.
-
+            Añadimos una columna adicional para enumerar las filas al principio del DataFrame datoClientes.
+            """)
+        st.image("imgs/5_PF.png", caption="Enumeración", use_column_width=True)
+        st.write("""
             :green[**Eliminación de Caracteres Especiales:**]
             Eliminamos caracteres no deseados tales como los tabuladores de las filas del DataFrame.
             
