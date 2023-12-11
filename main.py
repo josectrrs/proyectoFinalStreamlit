@@ -52,16 +52,17 @@ else:
 login_container = st.empty()
 
 # Botón para redirigir a la página de FAQ
-if st.button("Preguntas Frecuentes", key="faq_button"):
+faq_button_clicked = st.button("Preguntas Frecuentes")
+if faq_button_clicked:
     login_container.empty()  # Eliminar el panel de inicio de sesión
     FAQPage()  # Mostrar la página de FAQ directamente
-    st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
+    st.stop()  # Detener la ejecución para evitar IDs duplicados
+
+# Determinar la página a mostrar
+if st.session_state.username is None:
+    login()
 else:
-    # Determinar la página a mostrar
-    if st.session_state.username is None:
-        login()
-    else:
-        if st.session_state.username == "admin":
-            adminPage(st.session_state.username)
-        elif st.session_state.username == "auxiliar":
-            auxiliarPage(st.session_state.username)
+    if st.session_state.username == "admin":
+        adminPage(st.session_state.username)
+    elif st.session_state.username == "auxiliar":
+        auxiliarPage(st.session_state.username)
