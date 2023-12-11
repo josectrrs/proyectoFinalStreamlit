@@ -37,7 +37,9 @@ elif selected2 == "Paso 2":
         st.write("""
             :green[**Selección de Columnas Relevantes:**]
             Se eliminaron las columnas innecesarias ("Razón Social", "Régimen Fiscal", "Código Postal") y se conservó solo la columna del RFC. 
-            
+            """)
+        st.image("imgs/2_PF.png", caption="Selección de Columnas Relevantes", use_column_width=True)
+        st.write("""
             :green[**Modificación de Nombres de Columnas:**]
             Se estableció el nombre de la columna que quedaba como 'None' porque en el contexto del análisis posterior este dato no era útil.
             
