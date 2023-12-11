@@ -108,12 +108,19 @@ elif selected2 == "Paso 3":
         st.write("""
             :pencil: **Análisis de los datos** 
             
-            :green[**¿Qué datos están trabajando?:**]
-            Estamos trabajando con datos de clientes del sistema de "Factura Electrónica de CONTPAQi". Estos datos incluyen información relacionada con los clientes que utilizan el sistema, como sus nombres, Registro Federal de Contribuyentes (RFC), razón social, Régimen Fiscal, Código Postal y otros detalles relevantes. Estos datos son esenciales para la emisión de facturas electrónicas y deben ser validados ante el Servicio de Administración Tributaria (SAT) para asegurar su corrección y cumplimiento con las regulaciones fiscales.
-
-            :green[**¿De dónde se obtuvieron?:**]
-            Los datos fueron obtenidos a través de una base de datos de clientes del sistema de Factura Electrónica de CONTPAQi. Esta base de datos contiene información sobre diversas empresas que utilizan el sistema y que han registrado sus datos para la emisión de facturas electrónicas.
+            El análisis de datos es una fase crucial en el proceso de ciencia de datos que nos permite extraer información valiosa y patrones significativos de los datos adquiridos y limpiados. 
         """)
+        st.write("""
+            En este proyecto específico, se llevaron a cabo las siguientes acciones:
+        """)
+
+        st.write("""
+            :green[**Validación de RFC ante el SAT:**]
+            Se utilizó la información de los RFC de los clientes para realizar una validación ante el Servicio de Administración Tributaria (SAT). Esto implica verificar si los RFC son válidos y cumplen con las regulaciones fiscales vigentes.        
+        """)
+        st.image("imgs/urlValidacion.png", caption="URL del SAT", use_column_width=True)
+        st.image("imgs/imgValidacion.png", caption="Página de validación masiva de RFC", use_column_width=True)
+
 # Expander para Paso 4
 elif selected2 == "Paso 4":
     with st.expander("Ver explicación del Paso 4"):
