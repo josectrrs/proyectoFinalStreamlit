@@ -75,7 +75,7 @@ def auxiliarPage(username):
     txt_files = [file for file in os.listdir("archivos") if file == "RESPUESTA_SAT_RFC.txt"]
 
     if not excel_files or not txt_files:
-        st.warning("No se encontraron archivos necesarios en la carpeta 'archivos'.")
+        st.warning("No se encontraron los archivos necesarios. Contacte al administrador.")
     else:
         # Leer el archivo Excel
         if len(excel_files) > 1:
