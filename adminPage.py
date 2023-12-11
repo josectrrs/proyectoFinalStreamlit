@@ -1,8 +1,6 @@
 # adminPage.py
 import streamlit as st
-import pandas as pd
 import os
-
 
 def adminPage(username):
     st.title(f"Panel de Administrador - Bienvenido, {username}")
@@ -19,12 +17,7 @@ def adminPage(username):
         with open(save_path, "wb") as excel_file_save:
             excel_file_save.write(excel_file.getvalue())
 
-        excel_df = pd.read_excel(save_path)
         st.success("Archivo Excel subido con éxito!")
-
-        # Leer el archivo Excel y mostrar su contenido en una tabla
-        st.write("Contenido del archivo Excel:")
-        st.write(excel_df)
 
     # Subir archivo de texto
     txt_file = st.file_uploader("Subir archivo de texto", type=["txt"])
@@ -37,12 +30,7 @@ def adminPage(username):
         with open(save_path, "wb") as txt_file_save:
             txt_file_save.write(txt_file.getvalue())
 
-        txt_content = txt_file.getvalue().decode("latin-1")
         st.success("Archivo de texto subido con éxito!")
-
-        # Mostrar el contenido del archivo de texto en una tabla
-        st.write("Contenido del archivo de texto:")
-        st.write(txt_content)
 
     # Botón para vaciar archivos .xlsx, .xls y .txt
     if st.button("Vaciar Archivos"):
