@@ -1,6 +1,7 @@
 import streamlit as st
 from adminPage import adminPage
 from auxiliarPage import auxiliarPage
+from FAQPage import  FAQPage
 
 # Función para verificar las credenciales
 def authenticate(username, password):
@@ -46,3 +47,7 @@ else:
         adminPage(st.session_state.username)
     elif st.session_state.username == "auxiliar":
         auxiliarPage(st.session_state.username)
+
+# Se agrega un botón para redirigir a FAQPage
+if st.button("Preguntas Frecuentes"):
+    FAQPage()
