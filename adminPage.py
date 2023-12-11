@@ -32,7 +32,14 @@ def adminPage(username):
 
         st.success("Archivo de texto subido con éxito!")
 
+    # Botón para vaciar archivos .xlsx, .xls y .txt
+    if st.button("Vaciar Archivos"):
+        archivos_a_eliminar = [file for file in os.listdir("archivos") if file.endswith((".xls", ".xlsx", ".txt"))]
+        for archivo in archivos_a_eliminar:
+            archivo_path = os.path.join("archivos", archivo)
+            os.remove(archivo_path)
 
+        st.success("Archivos .xlsx, .xls y .txt eliminados con éxito!")
 
     # Mostrar archivos en la carpeta "archivos"
     st.write("Archivos en la carpeta 'archivos':")
@@ -42,15 +49,6 @@ def adminPage(username):
         st.warning("No se encontraron archivos en la carpeta 'archivos'.")
     else:
         st.write(archivos_en_carpeta)
-
-    # Botón para vaciar archivos .xlsx, .xls y .txt
-    if st.button("Vaciar Archivos"):
-        archivos_a_eliminar = [file for file in os.listdir("archivos") if file.endswith((".xls", ".xlsx", ".txt"))]
-        for archivo in archivos_a_eliminar:
-            archivo_path = os.path.join("archivos", archivo)
-            os.remove(archivo_path)
-
-        st.success("Archivos .xlsx, .xls y .txt eliminados con éxito!")
 
     # Botón para cerrar sesión
     if st.button("Cerrar Sesión"):
