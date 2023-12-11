@@ -26,11 +26,34 @@ elif selected2 == "Paso 2":
         st.write("""
             :pencil: **Limpieza de los datos** 
             
-            :green[**¿Qué datos están trabajando?:**]
-            Estamos trabajando con datos de clientes del sistema de "Factura Electrónica de CONTPAQi". Estos datos incluyen información relacionada con los clientes que utilizan el sistema, como sus nombres, Registro Federal de Contribuyentes (RFC), razón social, Régimen Fiscal, Código Postal y otros detalles relevantes. Estos datos son esenciales para la emisión de facturas electrónicas y deben ser validados ante el Servicio de Administración Tributaria (SAT) para asegurar su corrección y cumplimiento con las regulaciones fiscales.
+            La limpieza de datos se llevó a cabo después de obtener un archivo en formato .xlsx de clientes del sistema de Factura Electrónica de CONTPAQi.
+            
+            A continuación, se detallan los pasos de limpieza que se realizaron:
+            
+            :green[**Carga de Datos:**]
+            Se utilizó la biblioteca Pandas para cargar los datos desde el archivo .xlsx a un DataFrame llamado datoClientes.
+            
+            :green[**Selección de Columnas Relevantes:**]
+            Se eliminaron las columnas innecesarias ("Razón Social", "Régimen Fiscal", "Código Postal") y se conservó solo la columna del RFC. 
+            
+            :green[**Modificación de Nombres de Columnas:**]
+            Se estableció el nombre de la columna que quedaba como 'None' porque en el contexto del análisis posterior este dato no era útil.
+            
+            :green[**Formato Específico:**]
+            Se agregó el símbolo | al principio de cada valor en el DataFrame, utilizando applymap y una función lambda.
+            
+            :green[**Enumeración:**]
+            Añadimos una columna adicional para enumerar las filas.
 
-            :green[**¿De dónde se obtuvieron?:**]
-            Los datos fueron obtenidos a través de una base de datos de clientes del sistema de Factura Electrónica de CONTPAQi. Esta base de datos contiene información sobre diversas empresas que utilizan el sistema y que han registrado sus datos para la emisión de facturas electrónicas.
+            :green[**Eliminación de Caracteres Especiales:**]
+            Eliminamos caracteres no deseados tales como los tabuladores de las filas del DataFrame.
+            
+            :green[**Exportación a Formato Texto (.txt):**]
+            Guardamos el DataFrame resultante en un archivo de texto llamado "datos3.txt".
+            
+            :green[**Lectura:**]
+            Leímos una vez más el archivo de texto para revisar su contenido.
+            
         """)
 # Expander para Paso 3
 elif selected2 == "Paso 3":
