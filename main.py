@@ -50,6 +50,6 @@ else:
 
 # Se agrega un botón para redirigir a FAQPage
 if st.button("Preguntas Frecuentes"):
-    FAQPage()
     login_container.empty()  # Eliminar el panel de inicio de sesión
-    st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
+    FAQPage()
+    #st.rerun()  # Recargar la aplicación para mostrar la página correspondiente
