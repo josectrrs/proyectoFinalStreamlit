@@ -11,8 +11,9 @@ selected2 = option_menu(None, ["Paso 1", "Paso 2", "Paso 3", 'Paso 4'],
 if selected2 == "Paso 1":
     with st.expander("Ver explicación del Paso 1"):
         st.write("""
-            :pencil: **Adquisición de datos:** Aquí va la explicación detallada del Paso 1.
-            :green[Puedes agregar texto, imágenes o cualquier otro contenidos:]
+            :pencil: **Adquisición de datos** 
+            :green[**¿Qué datos se están trabajando?:**]
+            Estamos trabajando con datos de clientes del sistema de "Factura Electrónica de CONTPAQi". Estos datos incluyen información relacionada con los clientes que utilizan el sistema, como sus nombres, Registro Federal de Contribuyentes (RFC), razón social, Régimen Fiscal, Código Postal y otros detalles relevantes.
         """)
 # Expander para Paso 2
 elif selected2 == "Paso 2":
