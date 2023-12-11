@@ -66,32 +66,32 @@ elif selected2 == "Paso 2":
         st.image("imgs/7_PF.png", caption="Exportación a Formato Texto (.txt)", use_column_width=True)
         st.write("""
             :green[**Lectura y Ajuste Adicional:**]
-            Abrímos y leímos una vez más el archivo de texto y guardamos las líneas en la lista "lineas".
+            Abrimos y leemos una vez más el archivo de texto y guardamos las líneas en la lista "lineas".
             
         """)
         st.image("imgs/9_PF.png", caption="Lectura", use_column_width=True)
         st.write("""
-                    Eliminamos la primera línea de la lista "lineas".
+                    **1)** Eliminamos la primera línea de la lista "lineas".
                     
-                    Creamos una lista vacía llamada Lineas2.
+                    **2)** Creamos una lista vacía llamada Lineas2.
                     
-                    Luego Iteramos sobre cada línea en la lista "lineas".
+                    **3)** Luego Iteramos sobre cada línea en la lista "lineas".
                     
-                    Eliminamos los caracteres de tabulación de cada línea.
+                    **4)** Eliminamos los caracteres de tabulación de cada línea.
                     
-                    Agregamos la línea sin caracteres de tabulación a la lista Lineas2.
+                    **5)** Agregamos la línea sin caracteres de tabulación a la lista "Lineas2".
 
-                    Por último, mostramos la lista Lineas2 después de eliminar los caracteres de tabulación.
+                    **6)** Por último, mostramos la lista "Lineas2" después de eliminar los caracteres de tabulación.
                 
         """)
         st.image("imgs/10_PF.png", caption="Lectura", use_column_width=True)
 
         st.write("""
-                    Abrimos el archivo "datos3.txt" en modo escritura utilizando la declaración with.
+                    **1)** Abrimos el archivo "datos3.txt" en modo escritura utilizando la declaración with.
                             
-                    Iteramos sobre cada línea en la lista "Lineas2".
+                    **2)** Iteramos sobre cada línea en la lista "Lineas2".
                             
-                    Escribimos cada línea en el archivo "datos3.txt" sin caracteres de tabulación.
+                    **3)** Escribimos cada línea en el archivo "datos3.txt" sin caracteres de tabulación.
         """)
         st.image("imgs/11_PF.png", caption="Lectura", use_column_width=True)
 
