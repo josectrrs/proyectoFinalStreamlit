@@ -60,11 +60,11 @@ elif selected == "Integrantes":
     st.write("""
         **WILBERT ERNESTO AKE BERZUNZA** 
     """)
-    st.image("imgs/ernesto.jpg", caption="WILBERT ERNESTO AKE BERZUNZA", width=None, use_column_width=True)
+    st.image("imgs/wil.png", caption="WILBERT ERNESTO AKE BERZUNZA", width=None, use_column_width=True)
     st.write("""
         **JOSÉ CARLOS PIÑA TORRES** 
     """)
-    st.image("imgs/jose.png", caption="JOSÉ CARLOS PIÑA TORRES", width=None, use_column_width=True)
+    st.image("imgs/jos.png", caption="JOSÉ CARLOS PIÑA TORRES", width=None, use_column_width=True)
 
 elif selected == "FAQ":
     st.title("Proyecto Final - Comprobación de la validez de RFC")
