@@ -1,7 +1,7 @@
 import streamlit as st
 from adminPage import adminPage
 from auxiliarPage import auxiliarPage
-from FAQPage import  FAQPage
+from FAQPage import FAQPage
 
 # Función para verificar las credenciales
 def authenticate(username, password):
