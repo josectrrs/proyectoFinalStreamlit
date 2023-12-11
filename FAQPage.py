@@ -119,7 +119,9 @@ elif selected2 == "Paso 3":
             Se utilizó la información de los RFC de los clientes para realizar una validación ante el Servicio de Administración Tributaria (SAT). Esto implica verificar si los RFC son válidos y cumplen con las regulaciones fiscales vigentes.        
         """)
         st.image("imgs/urlValidacion.png", caption="URL del SAT", use_column_width=True)
+
         st.image("imgs/imgValidacion.png", caption="Página de validación masiva de RFC", use_column_width=True)
+
         st.image("imgs/respuestaSAT.png", caption="Validación de los RFC obtenida del SAT", use_column_width=True)
 
 # Expander para Paso 4
