@@ -39,18 +39,16 @@ if "username" not in st.session_state:
 # Crear un contenedor para el panel de inicio de sesión
 login_container = st.empty()
 
-# Mostrar el botón "Ir a Preguntas Frecuentes" en todo momento
-if st.button("Ir a Preguntas Frecuentes"):
-    login_container.empty()  # Eliminar el panel de inicio de sesión
-    FAQPage()
-
-
 # Determinar la página a mostrar
-if st.session_state.username is None and not st.session_state.login_completed:
+if st.session_state.username is None:
     login()
-    st.session_state.login_completed = True
 else:
     if st.session_state.username == "admin":
         adminPage(st.session_state.username)
     elif st.session_state.username == "auxiliar":
         auxiliarPage(st.session_state.username)
+
+# Mostrar el botón "Ir a Preguntas Frecuentes" en todo momento
+if st.button("Ir a Preguntas Frecuentes"):
+    login_container.empty()  # Eliminar el panel de inicio de sesión
+    FAQPage()
