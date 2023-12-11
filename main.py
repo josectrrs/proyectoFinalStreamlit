@@ -5,8 +5,8 @@ from streamlit_option_menu import option_menu
 
 
 with st.sidebar:
-    selected = option_menu("Menú Principal", ["Login", 'FAQ'],
-        icons=['house', 'gear'], menu_icon="cast", default_index=0)
+    selected = option_menu("Menú Principal", ["Login", 'Integrantes', 'FAQ'],
+        icons=['house', 'list-task', 'gear'], menu_icon="cast", default_index=0)
 
 if selected == "Login":
     # Función para verificar las credenciales
@@ -55,8 +55,17 @@ if selected == "Login":
             adminPage(st.session_state.username)
         elif st.session_state.username == "auxiliar":
             auxiliarPage(st.session_state.username)
+elif selected== "Integrantes":
+
+    st.write("""
+        **WILBERT ERNESTO AKE BERZUNZA** 
+    """)
+    st.write("""
+        **JOSÉ CARLOS PIÑA TORRES** 
+    """)
+
 elif selected == "FAQ":
-    st.title("Preguntas Frecuentes (FAQ) - Proyecto Final")
+    st.title("Proyecto Final - Comprobación de la validez de RFC")
 
     st.write("""
         :pencil: **Adquisición de datos** 
