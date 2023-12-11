@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 with st.sidebar:
     selected = option_menu("Menú Principal", ["Login", 'FAQ'],
-        icons=['house', 'gear'], menu_icon="cast", default_index=1)
+        icons=['house', 'gear'], menu_icon="cast", default_index=0)
 
 if selected == "Login":
     # Función para verificar las credenciales
