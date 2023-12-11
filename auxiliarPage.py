@@ -16,30 +16,22 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
             parts = line.split('|')
             if len(parts) == 3 and parts[1] == rfc_to_search:
                 status_text = parts[2].strip()
-                if "RFC válido" in status_text:
-                    #st.success(f"RFC {rfc_to_search} es válido ante el SAT. Detalles:\n{line}")
-
+                if "RFC válido" in status_text or "no registrado en el padrón de contribuyentes" in status_text:
                     # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
-                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
-                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
-
-                    # Mostrar los datos en una tabla
-                    st.write("Detalles del RFC:")
-                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
-                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
-                    st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
-                elif "no registrado en el padrón de contribuyentes" in status_text:
-                    #st.error(f"RFC {rfc_to_search} no registrado en el padrón de contribuyentes. Detalles:\n{line}")
-
-                    # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
-                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
-                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
-
-                    # Mostrar los datos en una tabla con color rojo
-                    st.write("Detalles del RFC (No Válido):")
-                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
-                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
-                    st.dataframe(df_details.style.applymap(color_cell_red, subset=["Respuesta del SAT"]))
+                    rfc_info = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, ["Régimen Fiscal", "Código Postal"]]
+                    if not rfc_info.empty:
+                        regimen_fiscal = rfc_info.iloc[0]["Régimen Fiscal"]
+                        codigo_postal = rfc_info.iloc[0]["Código Postal"]
+                        if pd.notna(codigo_postal):
+                            # Mostrar los datos en una tabla
+                            st.write("Detalles del RFC:")
+                            df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
+                                                       "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
+                            st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
+                        else:
+                            st.warning("No se obtuvo datos del Código Postal.")
+                    else:
+                        st.error("Error al obtener datos del RFC desde el archivo Excel.")
                 else:
                     st.warning(f"RFC {rfc_to_search} tiene un estado desconocido. Detalles:\n{line}")
                 break
@@ -47,6 +39,7 @@ def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
             st.warning(f"RFC {rfc_to_search} no encontrado en el archivo de texto.")
     else:
         st.error("Error al obtener el RFC desde el archivo Excel.")
+
 
 # Función para aplicar colores a las celdas en función de la respuesta del SAT (color verde)
 def color_cell(value):
@@ -61,8 +54,6 @@ def color_cell_red(value):
         return 'background-color: #ff8e8e; color: black'  # Rojo
     else:
         return ''  # Sin color
-
-
 
 def auxiliarPage(username):
     st.title(f"Panel de Auxiliar - Bienvenido, {username}")
