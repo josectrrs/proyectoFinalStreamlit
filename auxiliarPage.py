@@ -90,7 +90,7 @@ def auxiliarPage(username):
                                               key="selectbox")
 
         # Botón para realizar la búsqueda
-        if st.button("Buscar RFC en Archivo de Texto"):
+        if st.button("Comprobar estado de RFC"):
             # Buscar el RFC correspondiente en el archivo de texto
             txt_file_path = os.path.join("archivos", "RESPUESTA_SAT_RFC.txt")
             with open(txt_file_path, "r", encoding='latin-1') as txt_file:
