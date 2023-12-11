@@ -47,25 +47,3 @@ else:
         adminPage(st.session_state.username)
     elif st.session_state.username == "auxiliar":
         auxiliarPage(st.session_state.username)
-
-# Crear un contenedor para el panel de inicio de sesión
-login_container = st.empty()
-
-# Variable de estado para el botón de FAQ
-faq_button_clicked = st.session_state.faq_button_clicked if "faq_button_clicked" in st.session_state else False
-
-# Botón para redirigir a la página de FAQ
-if st.button("Preguntas Frecuentes") or faq_button_clicked:
-    login_container.empty()  # Eliminar el panel de inicio de sesión
-    FAQPage()  # Mostrar la página de FAQ directamente
-    st.session_state.faq_button_clicked = True  # Establecer la variable de estado para el botón de FAQ
-    st.experimental_rerun()  # Recargar la aplicación para mostrar la página correspondiente
-else:
-    # Determinar la página a mostrar
-    if st.session_state.username is None:
-        login()
-    else:
-        if st.session_state.username == "admin":
-            adminPage(st.session_state.username)
-        elif st.session_state.username == "auxiliar":
-            auxiliarPage(st.session_state.username)
