@@ -55,7 +55,7 @@ if selected == "Login":
             adminPage(st.session_state.username)
         elif st.session_state.username == "auxiliar":
             auxiliarPage(st.session_state.username)
-elif selected== "Integrantes":
+elif selected == "Integrantes":
 
     st.write("""
         **WILBERT ERNESTO AKE BERZUNZA** 
