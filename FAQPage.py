@@ -20,6 +20,7 @@ if selected2 == "Paso 1":
             Los datos fueron obtenidos a través de una base de datos de clientes del sistema de Factura Electrónica de CONTPAQi. Esta base de datos contiene información sobre diversas empresas que utilizan el sistema y que han registrado sus datos para la emisión de facturas electrónicas.
             
         """)
+        st.image("imgs/CONTPAQiFE.png", caption="Fuente de la obtención de datos", use_column_width=True)
 # Expander para Paso 2
 elif selected2 == "Paso 2":
     with st.expander("Ver explicación del Paso 2"):
