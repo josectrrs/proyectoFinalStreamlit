@@ -7,42 +7,41 @@ import os
 # Función para buscar el RFC en el archivo de texto y mostrar el resultado con colores
 def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content):
     rfc_column = excel_df.loc[excel_df["Razón Social"] == selected_reason_social, "R.F.C."]
-
     if not rfc_column.empty:
         rfc_to_search = rfc_column.iloc[0]
 
         # Buscar el RFC correspondiente en el archivo de texto
         lines = txt_content.split('\n')
-
         for line in lines:
             parts = line.split('|')
             if len(parts) == 3 and parts[1] == rfc_to_search:
                 status_text = parts[2].strip()
+                if "RFC válido" in status_text:
+                    #st.success(f"RFC {rfc_to_search} es válido ante el SAT. Detalles:\n{line}")
 
-                if "RFC válido" in status_text or "no registrado en el padrón de contribuyentes" in status_text:
                     # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
-                    rfc_row = excel_df.loc[excel_df["R.F.C."] == rfc_to_search]
+                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
+                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
 
-                    if not rfc_row.empty:
-                        regimen_fiscal = rfc_row.iloc[0]["Régimen Fiscal"]
-                        codigo_postal = rfc_row.iloc[0]["Código Postal"]
+                    # Mostrar los datos en una tabla
+                    st.write("Detalles del RFC:")
+                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
+                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
+                    st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
+                elif "no registrado en el padrón de contribuyentes" in status_text:
+                    #st.error(f"RFC {rfc_to_search} no registrado en el padrón de contribuyentes. Detalles:\n{line}")
 
-                        # Mostrar los datos en una tabla
-                        st.write("Detalles del RFC:")
-                        df_details = pd.DataFrame({
-                            "R.F.C.": [rfc_to_search],
-                            "Régimen Fiscal": [regimen_fiscal],
-                            "Código Postal": [codigo_postal],
-                            "Respuesta del SAT": [status_text]
-                        })
+                    # Obtener Régimen Fiscal y Código Postal del RFC desde el archivo Excel
+                    regimen_fiscal = excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Régimen Fiscal"].iloc[0]
+                    codigo_postal = int(excel_df.loc[excel_df["R.F.C."] == rfc_to_search, "Código Postal"].iloc[0])
 
-                        # Si no hay datos en el Código Postal, mostrar un mensaje específico
-                        if pd.isnull(codigo_postal):
-                            df_details["Código Postal"] = "No se obtuvo datos del Código Postal"
-
-                        st.dataframe(df_details.style.applymap(color_cell, subset=["Respuesta del SAT"]))
-                    else:
-                        st.error("Error al obtener el RFC desde el archivo Excel.")
+                    # Mostrar los datos en una tabla con color rojo
+                    st.write("Detalles del RFC (No Válido):")
+                    df_details = pd.DataFrame({"R.F.C.": [rfc_to_search], "Régimen Fiscal": [regimen_fiscal],
+                                               "Código Postal": [codigo_postal], "Respuesta del SAT": [status_text]})
+                    st.dataframe(df_details.style.applymap(color_cell_red, subset=["Respuesta del SAT"]))
+                else:
+                    st.warning(f"RFC {rfc_to_search} tiene un estado desconocido. Detalles:\n{line}")
                 break
         else:
             st.warning(f"RFC {rfc_to_search} no encontrado en el archivo de texto.")
