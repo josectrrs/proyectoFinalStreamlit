@@ -2,4 +2,4 @@ pandas
 streamlit
 openpyxl
 streamlit_option_menu
-matplotlib
+matplotlib==3.4.3
