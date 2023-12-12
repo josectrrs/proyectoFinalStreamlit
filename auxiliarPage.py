@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import os
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # Función para buscar el RFC en el archivo de texto y mostrar el resultado con colores
 def buscar_rfc_en_archivo_txt(excel_df, selected_reason_social, txt_content, manual_rfc=None):
@@ -95,19 +95,19 @@ def auxiliarPage(username):
                 buscar_rfc_en_archivo_txt(excel_df, "", txt_content, manual_rfc)
 
                 # Calcula las proporciones de RFC válidos y no válidos
-                validos = txt_content.count("RFC válido")
-                no_validos = txt_content.count("no registrado en el padrón de contribuyentes")
+                #validos = txt_content.count("RFC válido")
+                #no_validos = txt_content.count("no registrado en el padrón de contribuyentes")
 
                 # Crea el gráfico de pastel con números en lugar de porcentajes
-                labels = [f'RFC Válidos ({validos})', f'RFC No Válidos ({no_validos})']
-                sizes = [validos, no_validos]
-                colors = ['#8eff8e', '#ff8e8e']
+                #labels = [f'RFC Válidos ({validos})', f'RFC No Válidos ({no_validos})']
+                #sizes = [validos, no_validos]
+                #colors = ['#8eff8e', '#ff8e8e']
 
-                fig, ax = plt.subplots()
-                ax.pie(sizes, labels=labels, startangle=90, colors=colors)
-                ax.axis('equal')
+                #fig, ax = plt.subplots()
+                #ax.pie(sizes, labels=labels, startangle=90, colors=colors)
+                #ax.axis('equal')
 
-                st.pyplot(fig)
+                #st.pyplot(fig)
 
     # Botón para cerrar sesión
     if st.button("Cerrar Sesión"):
